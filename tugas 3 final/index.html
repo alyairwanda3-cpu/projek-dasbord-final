@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StockLink | Smart Inventory Dashboard</title>
+
+    <link rel="stylesheet" href="stayl.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark">
+                SL
+            </div>
+
+            <div>
+                <h1>StockLink</h1>
+                <span>Smart Inventory</span>
+            </div>
+        </div>
+
+        <div class="workspace">
+            <span>WORKSPACE</span>
+            <strong>Toko Aybeadsss</strong>
+        </div>
+
+        <nav class="menu">
+
+            <a href="#" class="menu-item active">
+                <span class="menu-icon">⌂</span>
+                <span>Overview</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">▦</span>
+                <span>Inventory</span>
+                <b>25</b>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">⇄</span>
+                <span>Transactions</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">⌁</span>
+                <span>Prediction</span>
+                <em>AI</em>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">↗</span>
+                <span>Restock</span>
+                <b class="danger-number">3</b>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">♧</span>
+                <span>Suppliers</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="menu-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>System Online</strong>
+                    <small>All services running</small>
+                </div>
+            </div>
+
+            <div class="user-mini">
+
+                <div class="avatar">
+                    PU
+                </div>
+
+                <div>
+                    <strong>Pemilik Usaha</strong>
+                    <small>Owner Account</small>
+                </div>
+
+                <span>•••</span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main id="main">
+
+        <!-- TOP NAV -->
+        <header class="topbar">
+
+            <div class="breadcrumb">
+                <span>Workspace</span>
+                <b>/</b>
+                <strong>Overview</strong>
+            </div>
+
+            <div class="top-actions">
+
+                <button class="icon-button">
+                    ⌕
+                </button>
+
+                <button class="icon-button notification">
+                    ♧
+                    <i>3</i>
+                </button>
+
+                <div class="top-profile">
+                    <div class="avatar small">
+                        PU
+                    </div>
+
+                    <div>
+                        <strong>Pemilik Usaha</strong>
+                        <span>Owner</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    THURSDAY, 08 OCTOBER 2026
+                </span>
+
+                <h2>
+                    Selamat datang kembali,
+                    <strong>Pemilik Usaha.</strong>
+                </h2>
+
+                <p>
+                    Semua kondisi persediaan toko kamu dalam satu tampilan.
+                    Pantau stok, prediksi kebutuhan, dan lakukan restock lebih cepat.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary">
+                        + Tambah Barang
+                    </a>
+
+                    <a href="#" class="btn-secondary">
+                        Lihat Laporan →
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-decoration">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="hero-box">
+                    <span>STOCK HEALTH</span>
+                    <strong>84%</strong>
+
+                    <div class="health-line">
+                        <i></i>
+                    </div>
+
+                    <small>Good inventory condition</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="stats">
+
+            <article class="stat-card">
+
+                <div class="stat-top">
+                    <span>Total Inventory</span>
+                    <div class="stat-icon blue">▦</div>
+                </div>
+
+                <strong class="stat-number">25</strong>
+
+                <div class="stat-footer">
+                    <span class="up">↑ 4</span>
+                    <span>barang bulan ini</span>
+                </div>
+
+            </article>
+
+
+            <article class="stat-card alert-card">
+
+                <div class="stat-top">
+                    <span>Low Stock</span>
+                    <div class="stat-icon orange">!</div>
+                </div>
+
+                <strong class="stat-number">03</strong>
+
+                <div class="stat-footer">
+                    <span class="warning">Perlu tindakan</span>
+                    <span>sekarang</span>
+                </div>
+
+            </article>
+
+
+            <article class="stat-card">
+
+                <div class="stat-top">
+                    <span>Predicted Demand</span>
+                    <div class="stat-icon purple">≈</div>
+                </div>
+
+                <strong class="stat-number">120</strong>
+
+                <div class="stat-footer">
+                    <span>unit</span>
+                    <span>periode berikutnya</span>
+                </div>
+
+            </article>
+
+
+            <article class="stat-card">
+
+                <div class="stat-top">
+                    <span>Connected Suppliers</span>
+                    <div class="stat-icon green">♧</div>
+                </div>
+
+                <strong class="stat-number">05</strong>
+
+                <div class="stat-footer">
+                    <span class="up">● Online</span>
+                    <span>supplier aktif</span>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- MAIN ANALYTICS -->
+        <section class="analytics-grid">
+
+
+            <!-- CHART -->
+            <article class="card chart-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <span class="mini-label">
+                            INVENTORY MOVEMENT
+                        </span>
+
+                        <h3>
+                            Barang Keluar
+                        </h3>
+                    </div>
+
+                    <select>
+                        <option>7 Hari terakhir</option>
+                        <option>30 Hari terakhir</option>
+                        <option>3 Bulan</option>
+                    </select>
+
+                </div>
+
+                <div class="chart-number">
+                    <strong>188</strong>
+                    <span>unit</span>
+                    <em>↑ 12.5%</em>
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="y-axis">
+                        <span>40</span>
+                        <span>30</span>
+                        <span>20</span>
+                        <span>10</span>
+                        <span>0</span>
+                    </div>
+
+                    <div class="graph">
+
+                        <div class="horizontal h1"></div>
+                        <div class="horizontal h2"></div>
+                        <div class="horizontal h3"></div>
+                        <div class="horizontal h4"></div>
+                        <div class="horizontal h5"></div>
+
+                        <div class="bars">
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:45%"></div>
+                                <span>Sen</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:63%"></div>
+                                <span>Sel</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:50%"></div>
+                                <span>Rab</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:80%"></div>
+                                <span>Kam</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:70%"></div>
+                                <span>Jum</span>
+                            </div>
+
+                            <div class="bar-column selected">
+                                <div class="bar" style="height:90%"></div>
+                                <span>Sab</span>
+                            </div>
+
+                            <div class="bar-column">
+                                <div class="bar" style="height:76%"></div>
+                                <span>Min</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- AI PREDICTION -->
+            <article class="card prediction-card">
+
+                <div class="prediction-glow"></div>
+
+                <div class="card-heading">
+
+                    <div>
+                        <span class="mini-label">
+                            SMART PREDICTION
+                        </span>
+
+                        <h3>
+                            Moving Average
+                        </h3>
+                    </div>
+
+                    <span class="ai-badge">
+                        AI POWERED
+                    </span>
+
+                </div>
+
+
+                <div class="prediction-main">
+
+                    <div class="prediction-ring">
+
+                        <div>
+                            <strong>120</strong>
+                            <span>UNIT</span>
+                        </div>
+
+                    </div>
+
+                    <div class="prediction-copy">
+
+                        <span>Prediksi kebutuhan</span>
+
+                        <strong>
+                            Periode berikutnya
+                        </strong>
+
+                        <small>
+                            Berdasarkan riwayat barang keluar
+                            dan perhitungan Moving Average.
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="prediction-stats">
+
+                    <div>
+                        <span>Stok tersedia</span>
+                        <strong>40 unit</strong>
+                    </div>
+
+                    <div>
+                        <span>Gap kebutuhan</span>
+                        <strong class="purple-text">80 unit</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="ai-message">
+
+                    <div class="ai-symbol">
+                        ✦
+                    </div>
+
+                    <div>
+                        <strong>Recommendation</strong>
+                        <p>
+                            Sistem menyarankan restock
+                            <b>80 unit</b> untuk menjaga
+                            ketersediaan stok.
+                        </p>
+                    </div>
+
+                </div>
+
+                <a href="#" class="full-button">
+                    Buka Analisis Prediksi →
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <!-- RESTOCK SECTION -->
+        <section class="restock-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="mini-label">
+                        ACTION REQUIRED
+                    </span>
+
+                    <h3>
+                        Rekomendasi Restock
+                    </h3>
+
+                    <p>
+                        Barang yang membutuhkan perhatian berdasarkan kondisi stok.
+                    </p>
+                </div>
+
+                <a href="#" class="outline-button">
+                    Semua Restock →
+                </a>
+
+            </div>
+
+
+            <div class="restock-grid">
+
+
+                <article class="restock-card critical">
+
+                    <div class="restock-header">
+
+                        <div class="product-symbol">
+                            MG
+                        </div>
+
+                        <span class="critical-tag">
+                            CRITICAL
+                        </span>
+
+                    </div>
+
+                    <h4>
+                        Minyak Goreng
+                    </h4>
+
+                    <span class="category">
+                        Sembako · Liter
+                    </span>
+
+                    <div class="stock-status">
+
+                        <div>
+                            <span>Current Stock</span>
+                            <strong>8</strong>
+                        </div>
+
+                        <div>
+                            <span>Predicted</span>
+                            <strong>25</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="stock-bar">
+                        <i style="width:28%"></i>
+                    </div>
+
+                    <div class="restock-bottom">
+
+                        <span>
+                            Butuh tambahan
+                            <b>17 liter</b>
+                        </span>
+
+                        <a href="#">
+                            Restock →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="restock-card warning-card">
+
+                    <div class="restock-header">
+
+                        <div class="product-symbol yellow">
+                            GL
+                        </div>
+
+                        <span class="warning-tag">
+                            LOW STOCK
+                        </span>
+
+                    </div>
+
+                    <h4>
+                        Gula
+                    </h4>
+
+                    <span class="category">
+                        Sembako · Kg
+                    </span>
+
+                    <div class="stock-status">
+
+                        <div>
+                            <span>Current Stock</span>
+                            <strong>10</strong>
+                        </div>
+
+                        <div>
+                            <span>Predicted</span>
+                            <strong>30</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="stock-bar yellow-bar">
+                        <i style="width:34%"></i>
+                    </div>
+
+                    <div class="restock-bottom">
+
+                        <span>
+                            Butuh tambahan
+                            <b>20 kg</b>
+                        </span>
+
+                        <a href="#">
+                            Restock →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="restock-card normal">
+
+                    <div class="restock-header">
+
+                        <div class="product-symbol green-symbol">
+                            TP
+                        </div>
+
+                        <span class="normal-tag">
+                            MONITOR
+                        </span>
+
+                    </div>
+
+                    <h4>
+                        Tepung
+                    </h4>
+
+                    <span class="category">
+                        Sembako · Kg
+                    </span>
+
+                    <div class="stock-status">
+
+                        <div>
+                            <span>Current Stock</span>
+                            <strong>25</strong>
+                        </div>
+
+                        <div>
+                            <span>Predicted</span>
+                            <strong>37</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="stock-bar green-bar">
+                        <i style="width:67%"></i>
+                    </div>
+
+                    <div class="restock-bottom">
+
+                        <span>
+                            Butuh tambahan
+                            <b>12 kg</b>
+                        </span>
+
+                        <a href="#">
+                            Restock →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM -->
+        <section class="bottom-grid">
+
+
+            <!-- ACTIVITY -->
+            <article class="card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <span class="mini-label">
+                            RECENT ACTIVITY
+                        </span>
+
+                        <h3>
+                            Aktivitas Terbaru
+                        </h3>
+                    </div>
+
+                    <a href="#">
+                        View all
+                    </a>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot green-dot">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>
+                                Stok Minyak Goreng diperbarui
+                            </strong>
+
+                            <span>
+                                Stok bertambah 20 liter
+                            </span>
+                        </div>
+
+                        <time>10m</time>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot blue-dot">
+                            ↗
+                        </div>
+
+                        <div>
+                            <strong>
+                                Restock Gula diajukan
+                            </strong>
+
+                            <span>
+                                Menunggu konfirmasi supplier
+                            </span>
+                        </div>
+
+                        <time>35m</time>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot purple-dot">
+                            ≈
+                        </div>
+
+                        <div>
+                            <strong>
+                                Prediksi kebutuhan diperbarui
+                            </strong>
+
+                            <span>
+                                Moving Average selesai
+                            </span>
+                        </div>
+
+                        <time>1h</time>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot orange-dot">
+                            !
+                        </div>
+
+                        <div>
+                            <strong>
+                                Stok Minyak Goreng menipis
+                            </strong>
+
+                            <span>
+                                Stok tersisa 8 liter
+                            </span>
+                        </div>
+
+                        <time>2h</time>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SUPPLIERS -->
+            <article class="card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <span class="mini-label">
+                            CONNECTED NETWORK
+                        </span>
+
+                        <h3>
+                            Supplier Terhubung
+                        </h3>
+                    </div>
+
+                    <span class="network-count">
+                        05 ACTIVE
+                    </span>
+
+                </div>
+
+
+                <div class="supplier-list">
+
+                    <div class="supplier-row">
+
+                        <div class="supplier-avatar">
+                            SJ
+                        </div>
+
+                        <div class="supplier-info">
+                            <strong>CV Sumber Jaya</strong>
+                            <span>5 produk tersedia</span>
+                        </div>
+
+                        <span class="online">
+                            ●
+                        </span>
+
+                    </div>
+
+
+                    <div class="supplier-row">
+
+                        <div class="supplier-avatar purple-avatar">
+                            UM
+                        </div>
+
+                        <div class="supplier-info">
+                            <strong>UD Makmur</strong>
+                            <span>8 produk tersedia</span>
+                        </div>
+
+                        <span class="online">
+                            ●
+                        </span>
+
+                    </div>
+
+
+                    <div class="supplier-row">
+
+                        <div class="supplier-avatar green-avatar">
+                            GS
+                        </div>
+
+                        <div class="supplier-info">
+                            <strong>Grosir Sejahtera</strong>
+                            <span>12 produk tersedia</span>
+                        </div>
+
+                        <span class="online">
+                            ●
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#" class="connect-button">
+                    + Hubungkan Supplier Baru
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <!-- QUICK ACTION -->
+        <section class="quick-action">
+
+            <div>
+                <span class="mini-label">
+                    QUICK ACTION
+                </span>
+
+                <h3>
+                    Apa yang ingin kamu lakukan?
+                </h3>
+            </div>
+
+
+            <div class="quick-buttons">
+
+                <a href="#">
+                    <span>＋</span>
+                    Tambah Barang
+                </a>
+
+                <a href="#">
+                    <span>⇄</span>
+                    Catat Transaksi
+                </a>
+
+                <a href="#">
+                    <span>⌁</span>
+                    Cek Prediksi
+                </a>
+
+                <a href="#">
+                    <span>♧</span>
+                    Hubungkan Supplier
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <span>
+                © 2026 StockLink
+            </span>
+
+            <span>
+                Smart Inventory Management System
+            </span>
+
+            <span>
+                System Online ●
+            </span>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
